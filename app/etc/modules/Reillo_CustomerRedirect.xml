@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Reillo_Customerredirect>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Reillo_Customerredirect>
+    </modules>
+</config>

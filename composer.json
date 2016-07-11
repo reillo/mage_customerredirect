@@ -1,0 +1,16 @@
+{
+    "name": "reillo/customerredirect",
+    "type": "magento-module",
+    "license":"OSL-3.0",
+    "description":"Magento (1.9.x) - Redirect customer group to specific store url after login.",
+    "authors":[
+        {
+            "name":"Regner Atillo",
+            "email":"atilloregner@gmail.com"
+        },
+        {
+            "name":"Jean-Paul Otto",
+            "email":"jean-paul@smarterliving.nl"
+        }
+    ]
+}

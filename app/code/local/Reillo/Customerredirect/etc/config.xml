@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Reillo_Customerredirect>
+            <version>0.2.0</version>
+        </Reillo_Customerredirect>
+    </modules>
+    <global>
+        <models>
+            <reillo_customerredirect>
+                <class>Reillo_Customerredirect_Model</class>
+            </reillo_customerredirect>
+        </models>
+        <blocks>
+            <reillo_customerredirect>
+                <class>Reillo_Customerredirect_Block</class>
+            </reillo_customerredirect>
+        </blocks>
+        <helpers>
+            <reillo_customerredirect>
+                <class>Reillo_Customerredirect_Helper</class>
+            </reillo_customerredirect>
+        </helpers>
+        <events>
+            <customer_login>
+                <observers>
+                    <controller_action_noroute>
+                        <type>singleton</type>
+                        <class>reillo_customerredirect/observer</class>
+                        <method>hookIntoCustomerLogin</method>
+                    </controller_action_noroute>
+                </observers>
+            </customer_login>
+        </events>
+    </global>
+</config>
