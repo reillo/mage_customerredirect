@@ -9,9 +9,9 @@ class Reillo_Customerredirect_Model_Observer
 	    $redirects = unserialize(Mage::getStoreConfig('customer/customerredirect/group_redirect'));
 
 	    try {
-		    $customer_id = $customer->getGroupId();
+		    $group_id = $customer->getGroupId();
 		    foreach ($redirects as $redirect) {
-			    if ($redirect['customer_group'] == $customer_id) {
+			    if ($redirect['customer_group'] == $group_id) {
 				    // do not redirect if store matched current store.
 				    if ($redirect['store'] != Mage::app()->getStore()->getId()) {
 					    // generate url
