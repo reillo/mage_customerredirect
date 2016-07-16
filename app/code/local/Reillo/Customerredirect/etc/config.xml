@@ -24,11 +24,11 @@
         <events>
             <customer_login>
                 <observers>
-                    <controller_action_noroute>
+                    <reillo_customerredirect_customer_login>
                         <type>singleton</type>
                         <class>reillo_customerredirect/observer</class>
                         <method>hookIntoCustomerLogin</method>
-                    </controller_action_noroute>
+                    </reillo_customerredirect_customer_login>
                 </observers>
             </customer_login>
         </events>
