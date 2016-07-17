@@ -13,7 +13,6 @@
                     <fields>
                         <group_redirect translate="label">
                             <label>Redirects</label>
-                            <comment>Menu items will be shown below the "Page" section in the mobile off-canvas menu.</comment>
                             <frontend_model>reillo_customerredirect/adminhtml_system_config_form_field_array_redirectitem</frontend_model>
                             <backend_model>adminhtml/system_config_backend_serialized_array</backend_model>
                             <sort_order>45</sort_order>
