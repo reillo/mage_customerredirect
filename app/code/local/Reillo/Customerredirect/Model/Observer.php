@@ -33,7 +33,8 @@ class Reillo_Customerredirect_Model_Observer
 							$url = Mage::helper('reillo_customerredirect')->generateUrlRedirect($redirect['store'], $uri);
 
 							// redirect
-							$session->setAfterAuthUrl($url);
+							$session->setBeforeAuthUrl($url)
+								->setAfterAuthUrl($url);
 						}
 
 						// stop for first matched customer group
